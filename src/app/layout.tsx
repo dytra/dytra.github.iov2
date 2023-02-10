@@ -29,7 +29,7 @@ export default function RootLayout({
       */}
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body>
@@ -40,9 +40,10 @@ export default function RootLayout({
             </div>
             <div className="menu-container ml-auto">
               <ul className="flex gap-5">
-                {menus.map(menu => {
+                {menus.map((menu,index) => {
                   return (
-                    <li className="menu-item font-medium"><a href="" className={menu.classes}>{menu.label}</a></li>
+                    <li key={index} className="menu-item font-medium"><a href="" className={menu.classes}>{menu.label}</a></li>
+
                   )
                 })}
               </ul>
