@@ -33,10 +33,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <main className="container mx-auto">
+        <main className="container md:max-w-5xl mx-auto">
           <nav className="flex pt-3 items-center">
             <div className="logo">
-              <span>dytrafolio</span>
+              <span className='font-semibold'>dytrafolio</span>
             </div>
             <div className="menu-container ml-auto">
               <ul className="flex gap-5">
